@@ -75,8 +75,13 @@ Results are stored in `/results/`.
 
 ---
 
-## Notes
 
-* Only 10-sample data is provided for each langauge in the training dataset demonstration due to copyright limits.
-* Only 10 groups of cognate pairs are shown in the example of egyptian_cognate_pairs.jsonl due to copyright limits.
-* clean_corpora.py can not be directly run for cleaning since it is targeted toward the real complete dataset. It is only shown here to illustrate the method and steps for cleaning. 
+
+## Notes on Reproducibility and Data Access
+
+Due to strict copyright restrictions from the Thesaurus Linguae Aegyptiae and Coptic Scriptorium, we cannot publicly re-distribute the full datasets. Therefore:
+* **Training Data:** Only a 10-sample demonstration is provided for each language in `data/`.
+* **Evaluation Data:** Only 10 groups of expert-curated cognate pairs are included in `resource_eval/egyptian_cognate_pairs.jsonl`.
+* **Preprocessing:** The `clean_corpora.py` script is provided to illustrate our exact data cleaning methodology, but it is tailored for the complete, raw dataset and cannot be executed directly on the provided demo files.
+
+Please note that running the provided commands on the demo data is solely to verify the code pipeline and will not reproduce the quantitative results (AUC, accuracy) or visualizations reported in the paper. To fully reproduce our findings, researchers must obtain the original datasets from the respective sources and process them using the provided scripts.
