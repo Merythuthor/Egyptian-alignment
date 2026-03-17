@@ -80,7 +80,7 @@ Results are stored in `/results/`.
 ## Notes on Reproducibility and Data Access
 
 Due to strict copyright restrictions from the Thesaurus Linguae Aegyptiae and Coptic Scriptorium, we cannot publicly re-distribute the full datasets. Therefore:
-* **Training Data:** Only a 10-sample demonstration is provided for each language in `data/`.
+* **Training Data:** A de minimis set of 10 illustrative snippets is provided solely for code integrity verification in `data/`.
 * **Evaluation Data:** Only 10 groups of expert-curated cognate pairs are included in `resource_eval/egyptian_cognate_pairs.jsonl`.
 * **Preprocessing:** The `clean_corpora.py` script is provided to illustrate our exact data cleaning methodology, but it is tailored for the complete, raw dataset and cannot be executed directly on the provided demo files.
 
